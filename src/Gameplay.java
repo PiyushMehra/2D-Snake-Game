@@ -79,7 +79,7 @@ public class Gameplay extends JPanel implements KeyListener , ActionListener{
         g.drawRect(24, 10, 851, 55);
         
         //draw title image
-        titleImage=new ImageIcon("snaketitle.jpg");
+        titleImage=new ImageIcon("heading11.jpg");
         titleImage.paintIcon(this, g, 25, 11);
         
         //draw border for gameplay
@@ -87,47 +87,47 @@ public class Gameplay extends JPanel implements KeyListener , ActionListener{
         g.drawRect(24, 74, 851, 577);
         
         //draw backgroung for gameplay
-        g.setColor(Color.GREEN);
+        g.setColor(Color.YELLOW);
         g.fillRect(25, 75, 850, 575);
         
         //draw score
         g.setColor(Color.WHITE);
-        g.setFont(new Font("arial", Font.PLAIN,14));
-        g.drawString("Score: "+score,750,30);
+        g.setFont(new Font("cooper", Font.PLAIN,14));
+        g.drawString("Points: "+score,50,50);
         
         //draw length
-        g.setColor(Color.WHITE);
-        g.setFont(new Font("arial", Font.PLAIN,14));
-        g.drawString("Length:"+lengthofsnake,750,50);
+//        g.setColor(Color.WHITE);
+//        g.setFont(new Font("arial", Font.PLAIN,14));
+//        g.drawString("Length:"+lengthofsnake,750,50);
+//        
         
         
-        
-        rightmouth=new ImageIcon("rmth.png");
+        rightmouth=new ImageIcon("green.png");
         rightmouth.paintIcon(this, g, snakexlength[0], snakeylength[0]);
         
         for(int a=0;a<lengthofsnake;a++){
         	if(a==0 && right){
-        		rightmouth=new ImageIcon("rmth.png");
+        		rightmouth=new ImageIcon("green.png");
                 rightmouth.paintIcon(this, g, snakexlength[a], snakeylength[a]);
                 	
         	}
         	if(a==0 && left){
-        		leftmouth=new ImageIcon("lmth.png");
+        		leftmouth=new ImageIcon("green.png");
         		leftmouth.paintIcon(this, g, snakexlength[a], snakeylength[a]);
                 	
         	}
         	if(a==0 && up){
-        		upmouth=new ImageIcon("upmth.png");
+        		upmouth=new ImageIcon("green.png");
         		upmouth.paintIcon(this, g, snakexlength[a], snakeylength[a]);
                 	
         	}
         	if(a==0 && down){
-        		downmouth=new ImageIcon("dmth.png");
+        		downmouth=new ImageIcon("green.png");
         		downmouth.paintIcon(this, g, snakexlength[a], snakeylength[a]);
                 	
         	}
         	if(a!=0){
-        		snakeimage=new ImageIcon("darkbody.png");
+        		snakeimage=new ImageIcon("orenge.png");
                 snakeimage.paintIcon(this, g, snakexlength[a], snakeylength[a]);
                 
         	}
